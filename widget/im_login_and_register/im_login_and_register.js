@@ -24,7 +24,7 @@ module.exports=Vue.component("comp-im_login_and_register",{
 			this.nowTemp='login';
 		},
 		login:function(){
-
+			window.location.href=`http://${window.location.host}/page/user/user.html`;
 		},
 		toRegister:function(){
 			this.nowTemp='register';

@@ -1,0 +1,24 @@
+<div class="comp-im_header">
+	<div class="cc_user_icon">
+		<img src="https://wx2.qq.com/cgi-bin/mmwebwx-bin/webwxgeticon?seq=621411601&username=@25269535de104d7f3cc4e7492370527f24fff983f8f908cf1b02a194da13fd88&skey=@crypt_92b26ae5_dbec91eea907dfac283ae6a146f3ffa8&type=big" />
+	</div>
+	<div class="cc_menu_box">
+		<div @click='changeMenuStatus' class="cc_menu_icon"></div>
+		<ul v-if='menuStatus' class="cc_menu">
+			<li>
+				<a @click='closeMessageTip' href="javascript:void(0);">
+					<i></i>
+					<span>关闭桌面通知</span>
+				</a>
+			</li>
+			<li>
+				<a @click='signOut' href="javascript:void(0);">
+					<i></i>
+					<span>退出</span>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+	<div class="cc_user_name">潘多拉潘多拉潘多拉潘多拉潘多拉潘多拉潘多拉潘多拉潘多拉</div>
+</div>

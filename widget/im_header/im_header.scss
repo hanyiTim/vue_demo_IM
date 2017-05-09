@@ -1,0 +1,59 @@
+@import '../../static/css/sass/setting.scss';
+.comp-im_header{
+	padding:18px;
+	.cc_user_icon{
+		width:40px;
+		height:40px;
+		overflow:hidden;
+		float:left;
+		margin-right:10px;
+		img{
+			display:block;
+			width:100%;
+		}
+	}
+	.cc_menu_box{
+		float:right;
+		position:relative;
+		margin-left:10px;
+	}
+	.cc_user_name{
+		line-height:40px;
+		font-size:18px;
+		color:#fff;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+	}
+	.cc_menu_icon{
+		width: 30px;
+		height: 30px;
+		background: rgba(0,0,0,.3);
+		margin-top:5px;
+	}
+	.cc_menu{
+		position:absolute;
+		right:0px;
+		top:100%;
+		margin-top:10px;
+		background-color:#fff;
+		border-radius:$border-radius;
+		li>a{
+			height:34px;
+			line-height:34px;
+			width:162px;
+			display:block;
+			padding:8px;
+			border-bottom:1px solid #eee;
+		}
+		li:last-child>a{
+			border-bottom-width:0px;
+		}
+		li>a>i{
+			width:34px;
+			height:34px;
+			overflow:hidden;
+			margin-right:8px;
+		}
+	}
+}
