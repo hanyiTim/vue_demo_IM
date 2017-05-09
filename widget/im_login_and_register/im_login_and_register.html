@@ -1,0 +1,35 @@
+<div class="comp-im_login_and_register">
+	<div v-if="nowTemp == 'login'" class="cc_login">
+		<div class="cc_title">登录</div>
+		<div class="cc_contain">
+			<div class="cc_input">
+				<input v-model="username" type="text" placeholder="用户名" />
+			</div>
+			<div class="cc_input">
+				<input v-model="password" type="password" placeholder="" />
+			</div>
+		</div>
+		<div class="cc_footer">
+			<a class="cc_btn cc_btn_login cc_btn_green" href="javascript:void(0);">登录</a>
+			<a class="cc_btn cc_btn_register" href="javascript:void(0);" @click="toRegister">前往注册</a>
+		</div>
+	</div>
+	<div v-if="nowTemp == 'register'" class="cc_regster">
+		<div class="cc_title">注册</div>
+		<div class="cc_contain">
+			<div class="cc_input">
+				<input type="text" placeholder="用户名" />
+			</div>
+			<div class="cc_input">
+				<input v-model="password"  class="cc_unvisible" type="text" placeholder="输入密码" />
+			</div>
+			<div class="cc_input">
+				<input v-model="confirmPassword" class="cc_unvisible" type="text" placeholder="确认密码" />
+			</div>
+		</div>
+		<div class="cc_footer">
+			<a class="cc_btn cc_btn_register cc_btn_green" href="javascript:void(0);">注册</a>
+			<a class="cc_btn cc_btn_login" href="javascript:void(0);" @click="toLogin">前往登录</a>
+		</div>
+	</div>
+</div>

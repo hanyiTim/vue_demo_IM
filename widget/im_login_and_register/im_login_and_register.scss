@@ -1,0 +1,41 @@
+@import '../../static/css/sass/setting.scss';
+.comp-im_login_and_register{
+	.cc_title{
+		font-size: 20px;
+		line-height: 50px;
+		text-align: center;
+	}
+	.cc_input{
+		padding: 15px 10px;
+		border:1px solid #eeeeee;
+		margin-top: -1px;
+		&>input{
+			width: 100%;
+			border-width:0px;
+			outline:none;
+			font-size: 16px;
+			height: 20px;
+			line-height: 20px;
+		}
+	}
+	.cc_btn{
+		display: block;
+		text-align: center;
+		line-height: 40px;
+		border:1px solid #eee;
+		border-radius:$border-radius;
+		margin-top:10px;
+		font-size: 16px;
+	}
+	.cc_btn_green{
+		background-color: #44b549;
+		color: #ffffff;
+		border-color:transparent;
+		&:hover{
+			background-color:#2f9833;
+		}
+	}
+	.cc_footer{
+		padding:10px 0px;
+	}
+}

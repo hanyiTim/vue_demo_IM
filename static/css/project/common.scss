@@ -1,0 +1,16 @@
+html{
+	min-height:100%;
+	font-size:14px;
+}
+body{
+	position:absolute;
+	height:100%;
+	width:100%;
+	left:0px;
+	top:0px;
+	background: url('../../images/bg.jpg') no-repeat  top center; 
+	background-size:cover;
+}
+a:hover,a:active,a:link,a:visited{
+	color:#333;
+}

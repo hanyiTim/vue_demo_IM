@@ -3,7 +3,7 @@
  *
  * 
  */
-var __domain="http://127.0.0.1:4040";
+var __domain="http://127.0.0.1:8080";
 
 //配置
 var fyg_conf={
