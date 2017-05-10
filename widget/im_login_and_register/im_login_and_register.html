@@ -3,10 +3,11 @@
 		<div class="cc_title">登录</div>
 		<div class="cc_contain">
 			<div class="cc_input">
-				<input v-model="username" type="text" placeholder="用户名" />
+				<input v-model="login_username" type="text" placeholder="用户名" />
 			</div>
 			<div class="cc_input">
-				<input v-model="password" type="password" placeholder="" />
+				<input @focus="changeView($event,'focus')" v-model="login_password" type="text" placeholder="密码" />
+				<input @blur="changeView($event,'blur')" class="cc_psw" v-model="login_password" type="password"  />
 			</div>
 		</div>
 		<div class="cc_footer">
@@ -18,13 +19,15 @@
 		<div class="cc_title">注册</div>
 		<div class="cc_contain">
 			<div class="cc_input">
-				<input type="text" placeholder="用户名" />
+				<input v-model="username" type="text" placeholder="用户名" />
 			</div>
 			<div class="cc_input">
-				<input v-model="password"  class="cc_unvisible" type="text" placeholder="输入密码" />
+				<input @focus="changeView($event,'focus')" v-model="password"  type="text" placeholder="输入密码" />
+				<input @blur="changeView($event,'blur')" v-model="password" class="cc_psw"  type="password" />
 			</div>
 			<div class="cc_input">
-				<input v-model="confirmPassword" class="cc_unvisible" type="text" placeholder="确认密码" />
+				<input @focus="changeView($event,'focus')" v-model="confirmPassword" type="text" placeholder="确认密码" />
+				<input @blur="changeView($event,'blur')" v-model="confirmPassword" class="cc_psw" type="password" />
 			</div>
 		</div>
 		<div class="cc_footer">
